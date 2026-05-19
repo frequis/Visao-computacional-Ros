@@ -23,6 +23,7 @@ Visao-computacional-Ros/
 │           └── turtle_commander/
 │               ├── __init__.py
 │               └── drawer_node.py
+├── testar_pipeline.py           ← visualização das etapas via matplotlib
 ├── imagens/
 │   ├── dog.jpg                  ← cachorro (1280×720 px)
 │   └── star.png                 ← estrela (imagem padrão, usada sem IMAGEM_ENTRADA)
@@ -34,11 +35,12 @@ Visao-computacional-Ros/
 - Python 3.10+
 - NumPy
 - OpenCV (`cv2`) — apenas para carregar a imagem
+- Matplotlib — apenas para visualização da pipeline
 - ROS 2 Jazzy
 - pacote `turtlesim`
 
 ```bash
-pip install numpy opencv-python
+pip install numpy opencv-python matplotlib
 ```
 
 ## Como executar
@@ -77,24 +79,20 @@ IMAGEM_ENTRADA=/home/frequis/ros/Visao-computacional-Ros/imagens/dog.jpg ros2 ru
 IMAGEM_ENTRADA=/home/frequis/ros/Visao-computacional-Ros/imagens/star.png ros2 run turtle_commander drawer_node
 ```
 
-### 4. Testar a pipeline isoladamente (sem ROS)
+### 4. Visualizar a pipeline isoladamente (sem ROS)
 
-```python
-import sys
-sys.path.insert(0, '.')   # executar da raiz do repositório
+O script `testar_pipeline.py` executa todas as etapas e abre uma janela matplotlib com os resultados de cada transformação.
 
-from pipeline_visao.processamento import carregar_imagem, converter_escala_cinza, aplicar_blur_gaussiano
-from pipeline_visao.detector_bordas import detectar_bordas_sobel, binarizar_bordas
-from pipeline_visao.mapeamento import extrair_coordenadas
+```bash
+cd Visao-computacional-Ros
 
-img    = carregar_imagem('imagens/star.png')   # ou dog.jpg
-cinza  = converter_escala_cinza(img)
-blur   = aplicar_blur_gaussiano(cinza)
-bordas = detectar_bordas_sobel(blur)
-bin_   = binarizar_bordas(bordas, 100)
-pontos = extrair_coordenadas(bin_)
-print(f'{len(pontos)} pontos mapeados para o Turtlesim')
+python3 testar_pipeline.py imagens/star.png
+python3 testar_pipeline.py imagens/dog.jpg
 ```
+
+São exibidos 6 painéis: imagem original, escala de cinza, blur gaussiano, bordas Sobel, binarização e o caminho final ordenado no espaço do Turtlesim.
+
+> **Dependência extra:** `matplotlib` (`pip install matplotlib`)
 
 ## Resultados dos Testes
 
