@@ -99,7 +99,9 @@ São exibidos 6 painéis: imagem original, escala de cinza, blur gaussiano, bord
 ### dog.jpg — 1280 × 720 px
 
 ![Resultado dog.jpg](docs/resultado_dog.png)
+![processamento dog.jpg](docs/Figure_dog.png)
 
 ### star.png — 736 × 386 px
 
 ![Resultado star.png](docs/resultado_star.png)
+![Processamento star.png](docs/Figure_star.png)
