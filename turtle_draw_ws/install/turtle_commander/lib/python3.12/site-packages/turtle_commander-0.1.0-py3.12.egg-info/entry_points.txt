@@ -1,0 +1,2 @@
+[console_scripts]
+drawer_node = turtle_commander.drawer_node:main

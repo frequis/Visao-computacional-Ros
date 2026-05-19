@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import sys
+import os
+
+# Sobe 5 níveis: lib/turtle_commander/ → install/turtle_commander/ → install/ → turtle_draw_ws/ → projeto_root
+_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", ".."))
+if _root not in sys.path:
+    sys.path.insert(0, _root)
+
+from turtle_commander.drawer_node import main
+main()

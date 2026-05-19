@@ -1,0 +1,25 @@
+[0.594s] Invoking command in '/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/src/turtle_commander': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_commander build --build-base /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/build install --record /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/install.log --single-version-externally-managed install_data
+[0.795s] running egg_info
+[0.809s] writing ../../build/turtle_commander/turtle_commander.egg-info/PKG-INFO
+[0.809s] writing dependency_links to ../../build/turtle_commander/turtle_commander.egg-info/dependency_links.txt
+[0.809s] writing entry points to ../../build/turtle_commander/turtle_commander.egg-info/entry_points.txt
+[0.809s] writing requirements to ../../build/turtle_commander/turtle_commander.egg-info/requires.txt
+[0.809s] writing top-level names to ../../build/turtle_commander/turtle_commander.egg-info/top_level.txt
+[0.840s] reading manifest file '../../build/turtle_commander/turtle_commander.egg-info/SOURCES.txt'
+[0.841s] writing manifest file '../../build/turtle_commander/turtle_commander.egg-info/SOURCES.txt'
+[0.841s] running build
+[0.841s] running build_py
+[0.841s] copying turtle_commander/drawer_node.py -> /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/build/lib/turtle_commander
+[0.841s] running install
+[0.846s] running install_lib
+[0.862s] copying /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/build/lib/turtle_commander/drawer_node.py -> /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages/turtle_commander
+[0.862s] byte-compiling /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages/turtle_commander/drawer_node.py to drawer_node.cpython-312.pyc
+[0.863s] running install_data
+[0.863s] copying scripts/drawer_node -> /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/turtle_commander
+[0.863s] running install_egg_info
+[0.879s] removing '/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages/turtle_commander-0.1.0-py3.12.egg-info' (and everything under it)
+[0.879s] Copying ../../build/turtle_commander/turtle_commander.egg-info to /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages/turtle_commander-0.1.0-py3.12.egg-info
+[0.879s] running install_scripts
+[0.976s] Installing drawer_node script to /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/bin
+[0.976s] writing list of installed files to '/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/install.log'
+[1.007s] Invoked command in '/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/src/turtle_commander' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/install/turtle_commander/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_commander build --build-base /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/build install --record /home/frequis/ros/Visao-computacional-Ros/turtle_draw_ws/build/turtle_commander/install.log --single-version-externally-managed install_data
