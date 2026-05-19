@@ -2,14 +2,6 @@
 
 Pipeline completa de visão computacional implementada do zero (NumPy puro) que extrai contornos de uma imagem e comanda a tartaruga do Turtlesim para desenhá-los.
 
-## Resultado
-
-Teste com `dog.jpg` (1280×720 px) — 2304 pontos de contorno mapeados para o espaço do Turtlesim:
-
-![Resultado dog.jpg](docs/resultado_dog.png)
-
-A tartaruga percorre somente as bordas detectadas pelo operador de Sobel. Saltos entre contornos desconexos são feitos com a caneta levantada (sem riscar), garantindo que apenas o contorno real da imagem seja desenhado.
-
 ## Estrutura
 
 ```
